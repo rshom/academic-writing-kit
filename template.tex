@@ -1,0 +1,517 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  10pt,
+  draftcls,
+  technote,
+  letterpaper,
+  oneside,
+  onecolumn]{IEEEtran}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+%% Extra package includes
+\usepackage[nopostdot,nogroupskip,nonumberlist]{glossaries}
+\usepackage{siunitx}
+
+%% Glossary
+\include{glossary}
+
+
+%% Fixes long table error with two columns
+%% \makeatletter
+%% \let\oldlt\longtable
+%% \let\endoldlt\endlongtable
+%% \def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
+%% \def\longtable@i[#1]{\begin{figure}[t]
+%% \onecolumn
+%% \begin{minipage}{0.5\textwidth}
+%% \setlength{\LTcapwidth}{\linewidth}
+%% \oldlt[#1]
+%% }
+%% \def\longtable@ii{\begin{figure}[t]
+%% \onecolumn
+%% \begin{minipage}{0.5\textwidth}
+%% \oldlt
+%% }
+%% \def\endlongtable{\endoldlt
+%% \end{minipage}
+%% \twocolumn
+%% \end{figure}}
+%% \makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={A complete but succinct description of work using relevant important keywords while being snappy when possible},
+  pdfauthor={1},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{A complete but succinct description of work using relevant
+important keywords while being snappy when possible}
+\author{1\textsuperscript{}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Four Sentences: State the problem. Say why it is an interesting problem.
+Say what your solution achieves, not what it is. Say what follows from
+your solutions.
+\end{abstract}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{problem}{%
+\subsection{Problem}\label{problem}}
+
+\hypertarget{statement}{%
+\subsubsection{Statement}\label{statement}}
+
+\begin{quote}
+What is the specific problem did you (attempt to) solve?\footnote{Getting
+  to the point as soon as possible is very important. I do not recommend
+  putting any background before stating what the point of your paper is.
+  Sentence 1 is more important than the abstract.} Why exactly does this
+problem exist? Who specifically has this problem? Scientists? Military?
+Industry?
+\end{quote}
+
+\hypertarget{importance}{%
+\subsubsection{Importance}\label{importance}}
+
+\begin{quote}
+How important is finding a solution (be realistic)? What would be
+possible that previously was not? Who specifically would benefit and
+how? Scientists? Military? Industry?
+\end{quote}
+
+\hypertarget{difficulty}{%
+\subsubsection{Difficulty}\label{difficulty}}
+
+\begin{quote}
+How difficult is the problem to solve (be realistic)? What specifically
+must be overcome? Are specific technologies required? Is there knowledge
+required? Does it require organizational or institutional
+support/cooperation?
+\end{quote}
+
+\hypertarget{solution}{%
+\subsection{Solution}\label{solution}}
+
+\hypertarget{proposed-solution}{%
+\subsubsection{Proposed Solution}\label{proposed-solution}}
+
+\begin{figure}
+\hypertarget{fig:solution}{%
+\centering
+\includegraphics{solution.png}
+\caption{Photo (or concept drawing) of your design preferably being
+deployed in the field. This figure should appear on page one. Many
+readers will not look at anything else. Caption is a short description
+and summary of system functionality.}\label{fig:solution}
+}
+\end{figure}
+
+\begin{quote}
+Briefly what is your solution? Reference
+fig.~\ref{fig:solution}.\footnote{Getting an impressive figure on page
+  one is very important. Most people skim figures before they do
+  anything else. Fig. 1 is more important than sentence 1.}
+\end{quote}
+
+\begin{quote}
+What is different about your solution? How does it overcome the problem
+difficulty?
+\end{quote}
+
+\hypertarget{design-considerations}{%
+\subsubsection{Design Considerations}\label{design-considerations}}
+
+\begin{quote}
+What specific challenges does your solution face (briefly)? How are
+those challenges different from those of other solutions?
+\end{quote}
+
+\hypertarget{success-criteria}{%
+\subsubsection{Success Criteria}\label{success-criteria}}
+
+\begin{quote}
+How would you evaluate a design of your concept (be specific)? Why is
+that criteria valid/important?
+\end{quote}
+
+\begin{quote}
+Did you create a working prototype? Did it meet your sucess criteria?
+Are further improvements likely?
+\end{quote}
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+\begin{quote}
+I try to avoid including this section. It lengthens and defocusses the
+paper. I try to push this information into references or appendix. I
+assume my readers are either experts or know how to look things up. If
+you need this, keep it as short as possible or attempt to fold it into
+the Introduction and/or Related Work.
+\end{quote}
+
+\begin{quote}
+Are there any conccepts required to understand the rest of your paper
+that you would not already expect your readers to understand?\footnote{Look
+  to reference texts books or comprehensive review papers.}
+\end{quote}
+
+\hypertarget{related-work}{%
+\section{Related Work}\label{related-work}}
+
+\begin{quote}
+Keep this section as short as possible and try to combine with
+Introduction and/or Background.
+\end{quote}
+
+\hypertarget{standard-practice}{%
+\subsection{Standard Practice}\label{standard-practice}}
+
+\begin{quote}
+How is this (or similar) problem commonly or historically
+solved?\footnote{Look to reference texts books or comprehensive review
+  papers.} Why is this not good enough? How is this different than your
+solution?
+\end{quote}
+
+\hypertarget{state-of-the-art}{%
+\subsection{State-of-the-Art}\label{state-of-the-art}}
+
+\begin{quote}
+How is this (or similar) problem solved by entities with greater access
+resources and the newest technology?\footnote{Look to reference texts
+  books or comprehensive review papers.} Why is this not good enough?
+Why is this not more common? How is this different than your solution?
+\end{quote}
+
+\hypertarget{key-projects}{%
+\subsection{Key Projects}\label{key-projects}}
+
+\begin{quote}
+Are there any specific related projects you need to address? Why are
+they not good enough? Why is this not more common? How is this different
+than your solution?
+\end{quote}
+
+\hypertarget{system-overview}{%
+\section{System Overview}\label{system-overview}}
+
+\hypertarget{design-overview}{%
+\subsection{Design Overview}\label{design-overview}}
+
+\begin{quote}
+What does the system look like? What are the functional subsystems? How
+do the subsytems interact?
+\end{quote}
+
+\begin{quote}
+For each subsystem: What is it? How does it work? How does it interact?
+\end{quote}
+
+\hypertarget{system-model}{%
+\subsection{System Model}\label{system-model}}
+
+\begin{quote}
+I prefer to start with a broad picture and then drill down into details
+rather than start with building blocks and build up into full structure.
+This is an uncommon choice, but one that I believe strongly in.
+\end{quote}
+
+\begin{quote}
+What is the overall state model? What are the state variables? How are
+they related?
+\end{quote}
+
+\begin{quote}
+What category of system or equation is this? (ie. harmonic oscillator)
+What kinds of results does it predict?
+\end{quote}
+
+\hypertarget{system-elements}{%
+\subsection{System Elements}\label{system-elements}}
+
+\begin{quote}
+For each term:
+\end{quote}
+
+\begin{quote}
+What does this represent physically? How do you predict the term?
+\end{quote}
+
+\begin{quote}
+What assumptions are you making? Are they realisitic, conservative,
+conditional, or stupid?
+\end{quote}
+
+\begin{quote}
+Can it be measured? Does measurement match prediction? Under what
+conditions? What does this mean? Are only emperical measured values
+valid?
+\end{quote}
+
+\hypertarget{system-dynamics}{%
+\subsection{System Dynamics}\label{system-dynamics}}
+
+\begin{quote}
+Given characterisitics of each element, how is model expected to behave?
+\end{quote}
+
+\hypertarget{control}{%
+\subsection{Control}\label{control}}
+
+\begin{quote}
+Is the system controllable?
+\end{quote}
+
+\begin{quote}
+What are the control inputs?
+\end{quote}
+
+\begin{quote}
+What are the control outputs?
+\end{quote}
+
+\begin{quote}
+Is the system stable?
+\end{quote}
+
+\hypertarget{modeling-results}{%
+\section{Modeling Results}\label{modeling-results}}
+
+\begin{quote}
+Why using models instead of models matched to lab results?\footnote{Model
+  results can fold nicely into lab tests, but some projects rely heavily
+  on modeling. This is fine, but it should be justified.}
+\end{quote}
+
+\begin{quote}
+Are these model results reasonable?
+\end{quote}
+
+\begin{quote}
+What assumptions are being made? Why is this valid?
+\end{quote}
+
+\hypertarget{lab-results}{%
+\section{Lab Results}\label{lab-results}}
+
+\begin{quote}
+What needs testing?
+\end{quote}
+
+\begin{quote}
+For each test: How did you set up the tests? How did you isolate
+variables? How did you control inputs? How did you measure outputs? Did
+results match expectations? What do results mean?
+\end{quote}
+
+\begin{quote}
+Do lab results generally match expectations? Can a system be deployed
+based on results?
+\end{quote}
+
+\hypertarget{field-results}{%
+\section{Field Results}\label{field-results}}
+
+\begin{quote}
+Who? What? When? Where? How?
+\end{quote}
+
+\begin{quote}
+Location, Depth, Duration, Distance?
+\end{quote}
+
+\begin{quote}
+What are qualitative observations? Expectations vs Reality?
+\end{quote}
+
+\begin{quote}
+What did you demonstrate?\footnote{This is a big deal and very
+  impressive. While it only amounts to a paragraph or two of writing, it
+  is the thing that makes a paper. Real artists ship, and real engineers
+  deploy.}
+\end{quote}
+
+\begin{quote}
+What were the major successes?
+\end{quote}
+
+\begin{quote}
+What do the results mean?
+\end{quote}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+\hypertarget{success}{%
+\subsection{Success}\label{success}}
+
+\begin{quote}
+Did you reach your success criteria? (be realistic)
+\end{quote}
+
+\begin{quote}
+What does that mean?
+\end{quote}
+
+\hypertarget{conclusions}{%
+\subsection{Conclusions}\label{conclusions}}
+
+\begin{quote}
+For each conclusion or major point: Restate the conclusion plainly.
+\end{quote}
+
+\hypertarget{future-work}{%
+\subsection{Future Work}\label{future-work}}
+
+\begin{quote}
+What Technology Readiness Level (TRL)\footnote{I use the precise wording
+  from TRL without actually refering to it. For example, TRL4
+  -\textgreater{} ``validated in lab'', TRL6 -\textgreater{}
+  ``demonstrated in the deep sea environment''} is the system in? What
+is next for this project? What needs to be investigated further? What
+needs to be tested?
+\end{quote}
+
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
+
+\begin{quote}
+For each: This project was made possible by a grant from the Foundation
+(123456)
+\end{quote}
+
+\begin{quote}
+For each: We wish to acknowledge (person/organization) for (contribution
+to project)
+\end{quote}
+
+\begin{quote}
+For each: We wish to acknowledge the captains and crews of the R/V
+Neverdock for their expertise and professionalism at sea.
+\end{quote}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\begin{quote}
+Use multiple bib files (related.bib/background.bib/\ldots). Organize
+within the files as well. Write your own abstracts into the entries.
+\end{quote}
+
+\begin{quote}
+10-30 refs is reasonable. 15-25 makes more sense.
+\end{quote}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\appendix
+
+\hypertarget{appendix}{%
+\subsection{Appendix}\label{appendix}}
+
+\begin{itemize}
+\tightlist
+\item
+  Background information required to understand new concepts.
+\item
+  Avoid using appendixes.
+\end{itemize}
+
+\end{document}

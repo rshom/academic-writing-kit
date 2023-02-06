@@ -1,6 +1,6 @@
 ;; -*- mode: emacs-lisp -*-
 
-;; pandoc-mode local settings file for template.md
+;; pandoc-mode project settings file
 ;; saved on 2023.02.05 23:10
 
 ((citeproc . t)
