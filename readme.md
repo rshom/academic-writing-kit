@@ -40,5 +40,6 @@ formatting needs.
   onecolumn]{IEEEtran}
 ```
 
-Update `glossary.tex` as needed. and refer to acronyms as in text
+If using pandoc update glossary in `header.tex` as needed. If using
+latex, update glossary in header and refer to acronyms as in text
 using the `\gls` or `glspl` commands.
