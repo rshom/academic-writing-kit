@@ -96,7 +96,11 @@
 \usepackage{siunitx}
 
 %% Glossary
-\include{glossary}
+\newacronym{WEC}{WEC}{wave energy converter}
+\newacronym{PM}{PM}{Pierson-Moskowitz}
+\newacronym{PTO}{PTO}{power take-off}
+\newacronym{KC}{KC}{Keulegan-Carpenter}
+\newacronym{MPPT}{MPPT}{maximum power point tracking}
 
 
 %% Fixes long table error with two columns
@@ -120,7 +124,6 @@
 %% \twocolumn
 %% \end{figure}}
 %% \makeatother
-
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -133,7 +136,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Test author affiliations with lua filters}
+\title{A complete but succinct description of work using relevant
+important keywords while being snappy when possible}
 \author{Jane Doe\textsuperscript{$\dagger{}$,1,2,*} \and John Q. Doe\textsuperscript{$\dagger{}$,2}}
 \date{\today}
 
