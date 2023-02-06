@@ -12,10 +12,24 @@ date: \today
 title: |
  A complete but succinct description of work using relevant important keywords 
  while being snappy when possible
+
+title: "Test author affiliations with lua filters"
+
+institute:
+    - acme: Acme Corporation
+    - federation: Federation of Planets
+
 author:
- - Russell Shomberg:
-	 institute: University of Rhode Island Narragansett RI USA
- # Add authors as necessary
+  - Jane Doe:
+      institute: [acme, federation]
+      equal_contributor: "yes"
+      correspondence: "yes"
+      email: jane.doe@example.com
+    
+  - John Q. Doe:
+      institute: [federation]
+      equal_contributor: "yes"
+	  
 abstract: |
  Four Sentences\:
  State the problem.

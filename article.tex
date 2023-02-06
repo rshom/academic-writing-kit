@@ -127,14 +127,13 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={A complete but succinct description of work using relevant important keywords while being snappy when possible},
-  pdfauthor={1},
+  pdftitle={Test author affiliations with lua filters},
+  pdfauthor={Jane Doe,1,2,; John Q. Doe,2},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{A complete but succinct description of work using relevant
-important keywords while being snappy when possible}
-\author{1\textsuperscript{}}
+\title{Test author affiliations with lua filters}
+\author{Jane Doe\textsuperscript{$\dagger{}$,1,2,*} \and John Q. Doe\textsuperscript{$\dagger{}$,2}}
 \date{\today}
 
 \begin{document}
@@ -144,6 +143,16 @@ Four Sentences: State the problem. Say why it is an interesting problem.
 Say what your solution achieves, not what it is. Say what follows from
 your solutions.
 \end{abstract}
+
+\textsuperscript{$\dagger{}$}
+These authors contributed equally to this work.
+
+\textsuperscript{1} Acme Corporation\\
+\textsuperscript{2} Federation of Planets
+
+\textsuperscript{*} Correspondence:
+\href{mailto:jane.doe@example.com}{Jane Doe
+\textless{}jane.doe@example.com\textgreater{}}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
