@@ -13,8 +13,6 @@ title: |
  A complete but succinct description of work using relevant important keywords 
  while being snappy when possible
 
-title: "Test author affiliations with lua filters"
-
 institute:
     - acme: Acme Corporation
     - federation: Federation of Planets
