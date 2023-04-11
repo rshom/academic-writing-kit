@@ -1,7 +1,7 @@
 ;; -*- mode: emacs-lisp -*-
 
-;; pandoc-mode local settings file for article.md
-;; saved on 2023.03.12 21:58
+;; pandoc-mode local settings file for writing-process.md
+;; saved on 2023.04.11 18:55
 
 ((citeproc . t)
  (latexmathml)
@@ -17,7 +17,7 @@
  (csl . "ieee.csl")
  (citation-abbreviations)
  (natbib)
- (biblatex . t)
+ (biblatex)
  (epub-stylesheet)
  (epub-cover-image)
  (epub-metadata)
@@ -64,7 +64,7 @@
  (no-highlight)
  (highlight-style)
  (syntax-definition)
- (include-in-header . "header.tex")
+ (include-in-header)
  (include-before-body)
  (include-after-body)
  (request-header)

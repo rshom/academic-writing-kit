@@ -1,5 +1,14 @@
 # Paper Starter Kit
 
+## References ##
+
+- [How to Write a Paper in a Weekend](https://www.youtube.com/watch?v=UY7sVKJPTMA)
+- [Skillful writing of an awful research
+  paper](https://pubs.acs.org/doi/10.1021/ac2000169)
+- [PhD: How to write a great research
+  paper](https://www.youtube.com/watch?v=1AYxMbYZQ1Y)
+- Personal experience and opinions...
+
 ## Writing Process ##
 
  1. Start a general outline by answering the questions.
@@ -14,7 +23,7 @@
     - Further research where necessary.
     - Further experiments/demonstrations where necessary.
     - Delete where not able to back up.
-    - Leave markers (@fig:qq), (@tbl:qq), (@lst:qq), [@qq] where
+    - Leave markers (@Fig:qq), (@Tbl:qq), (@Lst:qq), [@qq] where
       things still need to be done. These are easily searched for
       later.
  4. Note in outline where a figure, table, equation, or code example
@@ -65,9 +74,9 @@
 
   * All figures should be referenced.
   * I prefer to reference figures as parenthesis
-      * "The proposed design (@fig:solution) was made..."
+      * "The proposed design (@Fig:solution) was made..."
   * Others pefer (sometimes mandate) to reference in the sentence
-      * "The proposed design, shown in @fig:solution, was made..."
+      * "The proposed design, shown in @Fig:solution, was made..."
   * Generally use whichever produces a cleaner less wordy sentence 
 
   * TODO: look this up in IEEE style guide
@@ -105,15 +114,30 @@
 
 ## Figures ##
 
-  * MatPlotLib for charts/plots
-      * [ ] which style?
-      * https://pypi.org/project/SciencePlots/1.0.2/
-          * ieee one looks terible
-          * TODO: write my own version
-  * MATLAB for charts/plots
+For python figures, use matplotlib and either seaborn @Lst:pyfig1 or
+[scienceplots](https://pypi.org/project/SciencePlots/1.0.2/) @Lst:pyfig2
+
+
+
+```{.python #lst:pyfig1 caption="Set up python figures with seaborn"}
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_theme(context='notebook', style='darkgrid',
+	palette='deep', font='sans-serif',
+	font_scale=1,color_codes=True,rc=None)
+plt.rcParams.update({'figure.dpi': '200'})	
+```
+
+
+```{.python #lst:pyfig2 caption="Set up python figures with scienceplots"}
+import scienceplots
+plt.style.use(['science','nature'])
+plt.rcParams.update({'figure.dpi': '200'}) 
+```
+
+  * MATLAB for charts/plots @Lst:mlfig1
       * not recommended, python is better
-      * [ ] show my starter file
-      * https://www.youtube.com/watch?v=sMMn0X3XKyI	  
+      * https://www.youtube.com/watch?v=sMMn0X3XKyI
   * Inkscape for diagrams
       * https://www.youtube.com/watch?v=ITpjjDETGk8
       * [ ] make a template file
@@ -125,24 +149,80 @@
   * CAD renders
   * CAD line drawings
   * Photos
-      * [ ] lots of advice here
   * https://mentor.ieee.org/myproject/file/public/mytools/draft/stylegraph.pdf
   
+```{.matlab #lst:mlfig1 caption="Function for setting up figures in matlab"}
+function hfig = setup_figure(cols, rows, fsize)
+arguments
+    cols = 1
+    rows = 1
+    fsize = 10
+end
+
+hw_ratio = 9/16;
+
+
+macbook_m1_16in_ppi = 226.42;
+macbook_m1_16in_ext_ppi = 137.68;
+asus_monitor_21in5_ppi = 102.46;
+
+ppi = macbook_m1_16in_ext_ppi;
+%ppi = asus_monitor_21in5_ppi;
+
+col_width = 3.5; % inches
+col_gap = 0.16; % inches
+
+width = cols*col_width+(cols-1)*col_gap; % inches
+height = hw_ratio*width*rows;
+
+hfig = figure('Renderer', 'painters', 'Units', 'pixels', ...
+    'Position', ppi*[3 3 width height]);
+
+%set(hfig,"Units","inches")
+%set(hfig,'Units','inches','Position',[3 3 width hw_ratio*width])
+
+set(hfig,'defaultLineLineWidth',1.5) 
+set(hfig,'DefaultaxesLineWidth', 1.5) 
+set(hfig,'DefaultaxesFontSize', fsize) 
+set(hfig,'DefaultaxesFontWeight', 'normal') 
+set(hfig,'DefaultTextFontSize', fsize) 
+set(hfig,'DefaultaxesFontName', 'Times new Roman') 
+set(hfig,'DefaultlegendFontName', 'Times new Roman')
+set(hfig,'defaultAxesXGrid','on') 
+set(hfig,'defaultAxesYGrid','on') 
+
+set(findall(hfig,'-property','Box'),'Box','off') % optional
+set(findall(hfig,'-property','Interpreter'),'Interpreter','latex')
+set(findall(hfig,'-property','TickLabelInterpreter'),'TickLabelInterpreter','latex')
+
+set(hfig,'PaperPositionMode','Auto','PaperUnits','inches','PaperSize',[width,height])
+
+%set(findall(hfig,'-property','FontSize'),'FontSize',fontsize);
+set(hfig,'DefaultLineMarkerSize',3); %// The default is usually 6
+fontsize(hfig,fsize,'points');
+
+end
 ```
-set(groot,'defaultLineLineWidth',2.5) 
-set(0,'DefaultaxesLineWidth', 1.5) 
-set(0,'DefaultaxesFontSize', 14) 
-set(0,'DefaultaxesFontWeight', 'bold') 
-set(0,'DefaultTextFontSize', 14) 
-set(0,'DefaultaxesFontName', 'Times new Roman') 
-set(0,'DefaultlegendFontName', 'Times new Roman')
-set(0,'defaultAxesXGrid','on') 
-set(0,'defaultAxesYGrid','on') 
+
+Then to save @fig:mlsave
+
+```{.matlab #fig:mlsave caption="Save matlab figure"}
+print(hfig,fullfile(fdir,fname),'-dpng','-vector')
 ```
 
 ## Equations ##
 
-  * [ ] look up guidance
+  * https://web.cs.ucdavis.edu/~amenta/w10/writingman.pdf
+
+WHAT'S WRONG WITH THESE EQUATIONS? @mermin1989s is an unofficial guide
+to how to include equations in prose. It is summerised as:
+  
+  1. Number every equation because you or someone may want to refer to
+     it later.
+  2. Refer to equations with a descriptive label and the number. If
+     this can not easily be done, consider whether you need that
+     equation or crossreference at all.
+  3. Use punctuation to include equations as part of prose.
 
 ## Numbers and Units ##
 
@@ -154,9 +234,9 @@ updating numbers in the text. If I have to put numbers in the text I
 avoid repitition.
 
 When necessary to include numbers in tex use proper units through the
-siunitx package.
+siunitx package @Lst:test.
 
-```
+```{#lst:test .latex caption="Examples of units in latex"}
 \si{kg.s^{-1}}
 \si{\kilogram\meter\per\second\squared}
 \si[per-mode=symbol]{\kilogram\per\second}
