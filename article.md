@@ -41,29 +41,29 @@ abstract: |
 
 ### Statement ###
 
-> What is the specific problem did you (attempt to) solve?[^1]
-> Why exactly does this problem exist?
-> Who specifically has this problem?
-> Scientists?
-> Military?
-> Industry?
+* What is the specific problem did you (attempt to) solve?[^1]
+* Why exactly does this problem exist?
+* Who specifically has this problem?
+* Scientists?
+* Military?
+* Industry?
 
 ### Importance ###
 
-> How important is finding a solution (be realistic)?
-> What would be possible that previously was not?
-> Who specifically would benefit and how?
-> Scientists?
-> Military?
-> Industry?
+* How important is finding a solution (be realistic)?
+* What would be possible that previously was not?
+* Who specifically would benefit and how?
+* Scientists?
+* Military?
+* Industry?
 
 ### Difficulty ###
 
-> How difficult is the problem to solve (be realistic)?
-> What specifically must be overcome?
-> Are specific technologies required?
-> Is there knowledge required?
-> Does it require organizational or institutional support/cooperation?
+* How difficult is the problem to solve (be realistic)?
+* What specifically must be overcome?
+* Are specific technologies required?
+* Is there knowledge required?
+* Does it require organizational or institutional support/cooperation?
   
 ## Solution ##
 
@@ -74,75 +74,75 @@ the field. This figure should appear on page one. Many readers will not look at
 anything else. Caption is a short description and summary of system
 functionality.](solution.png){#fig:solution}
 
-> Briefly what is your solution? 
-> Reference @fig:solution.[^2]
+* Briefly what is your solution? 
+* Reference @fig:solution.[^2]
 
-> What is different about your solution?
-> How does it overcome the problem difficulty?
+* What is different about your solution?
+* How does it overcome the problem difficulty?
 
 ### Design Considerations ###
 
-> What specific challenges does your solution face (briefly)?
-> How are those challenges different from those of other solutions? 
+* What specific challenges does your solution face (briefly)?
+* How are those challenges different from those of other solutions? 
 
 ### Success Criteria ###
 
-> How would you evaluate a design of your concept (be specific)?
-> Why is that criteria valid/important?
+* How would you evaluate a design of your concept (be specific)?
+* Why is that criteria valid/important?
 
-> Did you create a working prototype?
-> Did it meet your sucess criteria?
-> Are further improvements likely?
+* Did you create a working prototype?
+* Did it meet your success criteria?
+* Are further improvements likely?
  
 # Background #
 
-> I try to avoid including this section. It lengthens and defocusses the
-> paper. I try to push this information into references or appendix. I assume my
-> readers are either experts or know how to look things up. If you need this,
-> keep it as short as possible or attempt to fold it into the Introduction
-> and/or Related Work.
+> I try to avoid including this section. It lengthens and de-focusses the
+  paper. I try to push this information into references or appendix. I assume my
+  readers are either experts or know how to look things up. If you need this,
+  keep it as short as possible or attempt to fold it into the Introduction
+  and/or Related Work.
 
-> Are there any conccepts required to understand the rest of your paper that you
-> would not already expect your readers to understand?[^9]
+* Are there any conccepts required to understand the rest of your paper that you
+  would not already expect your readers to understand?[^9]
 
 # Related Work #
 
-> Keep this section as short as possible and try to combine with Introduction
-> and/or Background.
+* Keep this section as short as possible and try to combine with Introduction
+  and/or Background.
 
 ## Standard Practice ##
 
-> How is this (or similar) problem commonly or historically solved?[^9]
-> Why is this not good enough?
-> How is this different than your solution?
+* How is this (or similar) problem commonly or historically solved?[^9]
+* Why is this not good enough?
+* How is this different from your solution?
 
 ## State-of-the-Art ##
 
-> How is this (or similar) problem solved by entities with greater access
-> resources and the newest technology?[^9]
-> Why is this not good enough?
-> Why is this not more common?
-> How is this different than your solution?
+* How is this (or similar) problem solved by entities with greater access
+  resources and the newest technology?[^9]
+* Why is this not good enough?
+* Why is this not more common?
+* How is this different from your solution?
 
 ## Key Projects ##
 
-> Are there any specific related projects you need to address?
-> Why are they not good enough?
-> Why is this not more common?
-> How is this different than your solution?
+* Are there any specific related projects you need to address?
+* Why are they not good enough?
+* Why is this not more common?
+* How is this different from your solution?
 
 # System Overview #
 
 ## Design Overview ##
 
-> What does the system look like? 
-> What are the functional subsystems?
-> How do the subsytems interact?
+* What does the system look like? 
+* What are the functional subsystems?
+* How do the subsytems interact?
 
-> For each subsystem: 
-> What is it? 
-> How does it work? 
-> How does it interact?
+* For each subsystem: 
+* What is it? 
+* How does it work? 
+* How does it interact?
 
 ## System Model ##
 
@@ -150,121 +150,112 @@ functionality.](solution.png){#fig:solution}
 > than start with building blocks and build up into full structure. This is an
 > uncommon choice, but one that I believe strongly in.
 
-> What is the overall state model? 
-> What are the state variables? 
-> How are they related?
+* What is the overall state model? 
+* What are the state variables? 
+* How are they related?
 
-> What category of system or equation is this? (ie. harmonic oscillator)
-> What kinds of results does it predict?
+* What category of system or equation is this? (i.e. harmonic oscillator)
+* What kinds of results does it predict?
 	
 ## System Elements ##
 
-> For each term:
+* For each term:
 
-> What does this represent physically?
-> How do you predict the term?
+* What does this represent physically?
+* How do you predict the term?
 
-> What assumptions are you making?
-> Are they realisitic, conservative, conditional, or stupid?
+* What assumptions are you making?
+* Are they realistic, conservative, conditional, or stupid?
 
-> Can it be measured?
-> Does measurement match prediction?
-> Under what conditions?
-> What does this mean?
-> Are only emperical measured values valid?
+* Can it be measured?
+* Does measurement match prediction?
+* Under what conditions?
+* What does this mean?
+* Are only empirical measured values valid?
 
 ## System Dynamics ##
 
- > Given characterisitics of each element, how is model expected to behave?
+ * Given characteristics of each element, how is model expected to behave?
   
 ## Control ##
 
-> Is the system controllable?
+* Is the system controllable?
 
-> What are the control inputs?
+* What are the control inputs?
 
-> What are the control outputs?
+* What are the control outputs?
 
-> Is the system stable?
+* Is the system stable?
 
 # Modeling Results #
 
-> Why using models instead of models matched to lab results?[^3]
-
-> Are these model results reasonable?
-
-> What assumptions are being made?
-> Why is this valid?
+* Why using models instead of models matched to lab results?[^3]
+* Are these model results reasonable?
+* What assumptions are being made?
+* Why is this valid?
 
 # Lab Results #
 
-> What needs testing?
+* What needs testing?
 
-> For each test:
-> How did you set up the tests?
-> How did you isolate variables?
-> How did you control inputs?
-> How did you measure outputs?
-> Did results match expectations?
-> What do results mean?
+* For each test:
+* How did you set up the tests?
+* How did you isolate variables?
+* How did you control inputs?
+* How did you measure outputs?
+* Did the results match expectations?
+* What do the results mean?
 
-> Do lab results generally match expectations?
-> Can a system be deployed based on results?
+* Do lab the results generally match expectations?
+* Can a system be deployed based on results?
 
 # Field Results #
 
-> Who? What? When? Where? How?
+* Who? What? When? Where? How?
 
-> Location, Depth, Duration, Distance?
+* Location, Depth, Duration, Distance?
 
-> What are qualitative observations?
-> Expectations vs Reality?
-
-> What did you demonstrate?[^4]
-
-> What were the major successes?
-
-> What do the results mean?
+* What are qualitative observations?
+* Expectations vs Reality?
+* What did you demonstrate?[^4]
+* What were the major successes?
+* What do the results mean?
 
 # Conclusion #
 
 ## Success ##
 
-> Did you reach your success criteria? (be realistic)
-
-> What does that mean?
+* Did you reach your success criteria? (be realistic)
+* What does that mean?
 
 ## Conclusions ##
 
-> For each conclusion or major point:
-> Restate the conclusion plainly.
+* For each conclusion or major point:
+* Restate the conclusion plainly.
 
 ## Future Work ##
 
-> What Technology Readiness Level (TRL)[^5] is the system in?
-> What is next for this project?
-> What needs to be investigated further?
-> What needs to be tested?
+* What Technology Readiness Level (TRL)[^5] is the system in?
+* What is next for this project?
+* What needs to be investigated further?
+* What needs to be tested?
 
 # Acknowledgments #
 
-> For each: This project was made possible by a grant from the Foundation
-> (123456)
+* For each: This project was made possible by a grant from the Foundation (123456)
 
-> For each: We wish to acknowledge (person/organization) for (contribution to
-> project)
+* For each: We wish to acknowledge (person/organization) for (contribution to project)
 
-> For each: We wish to acknowledge the captains and crews of the R/V Neverdock
-> for their expertise and professionalism at sea.
+* For each: We wish to acknowledge the captains and crews of the R/V Neverdock *for their expertise and professionalism at sea.
 
 # References # {-}
 
-> Use multiple bib files (related.bib/background.bib/...).
-> Organize within the files as well.
-> Write your own abstracts into the entries.
+* Use multiple bib files (related.bib/background.bib/...).
+* Organize within the files as well.
+* Write your own abstracts into the entries.
 
-> 10-30 refs is reasonable.
-> 15-25 makes more sense.
+* 10-30 refs is reasonable.
+* 15-25 makes more sense.
 
 ::: {#refs} 
 :::
@@ -291,8 +282,9 @@ important than sentence 1.
     a paragraph or two of writing, it is the thing that makes a
     paper. Real artists ship, and real engineers deploy.
 
-[^5]: I use the precise wording from TRL without actually refering to
+[^5]: I use the precise wording from TRL without actually referring to
     it. For example, TRL4 -> "validated in lab", TRL6 -> "demonstrated
     in the deep sea environment"
 
 [^9]: Look to reference texts books or comprehensive review papers.
+ 
